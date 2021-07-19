@@ -25,8 +25,8 @@ app.use(express.json());
 
 const balances = {}
 balances[address] = 100;
-balances[address2] = 50;
-balances[address3] = 75
+balances[address2] = 200;
+balances[address3] = 300;
 
 app.get('/balances', (req, res) => {
   res.send({ balances });

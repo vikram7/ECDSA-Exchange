@@ -1,12 +1,15 @@
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Courier', sans-serif;
   font-weight: 300;
 }
 
-input {
+input[type="text"] {
   padding: 9px 25px;
-  border-radius: 5px;
-  text-transform: uppercase;
+  width: 800px;
+}
+
+.total-balances .addresses {
+  font-size: 10px;
 }
 
 #balance {
@@ -21,7 +24,10 @@ input {
 
 .components {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 
   > div {
     background-color: #eee;
@@ -36,10 +42,21 @@ input {
   }
 }
 
+.total-balances {
+  width: 900px;
+}
+
+.wallet {
+  width: 800px;
+}
+
+.send {
+  width: 800px;
+}
+
 .button {
   display: inline-block;
   font-weight: bold;
-  text-transform: uppercase;
   border-radius: 5px;
   border: none;
   padding: 9px 25px;
